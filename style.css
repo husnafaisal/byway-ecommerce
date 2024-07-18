@@ -1,0 +1,628 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn-login {
+    background-color: transparent;
+}
+
+.btn-signup {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+    background-color: #555;
+    color: #fff;
+}
+.spotlight-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.spotlight-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.spotlight-content h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.spotlight-content h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.spotlight-content p {
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+    color:gray;
+
+}
+
+.spotlight-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spotlight-image {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 20px;
+}
+.card-container {
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+.card-box {
+    background-color: #F8FAFC;
+    ; /* Gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Distribute cards evenly */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 210px; /* Adjust width as needed */
+    margin-right: 20px; /* Space between cards */
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from last card */
+}
+
+.card:not(:last-child) {
+    border-right: 1px solid #ccc; /* Gray line between cards */
+}
+
+.top-categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.see-all {
+    text-decoration: none;
+    color: #337ab7;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+.category-list {
+    display: flex;
+    gap: 85px; /* Adjust gap between cards */
+    width: 100%; /* Full width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px; /* Padding around the category list */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    border-top: 1px solid #ddd; /* Gray border on top */
+    border-bottom: 1px solid #ddd; /* Gray border on bottom */
+}
+
+.category-item {
+    flex: 0 0 calc(20% - 40px); /* Adjust card width to fit within the space between cards */
+    min-width: 200px; /* Minimum width for each card */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.category-card {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    text-align: center; /* Center align text */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Icon container width */
+    height: 80px; /* Icon container height */
+    border-radius: 50%; /* Circle shape */
+    background-color: #87CEEB; /* Light blue background */
+    margin: 0 auto 10px; /* Center icon vertically and provide bottom margin */
+}
+
+.icon img {
+    width: 50%; /* Adjust icon size */
+    height: auto;
+}
+
+.category-card h3 {
+    font-size: 16px; /* Font size for category title */
+    font-weight: 400; /* Font weight for category title */
+    margin: 10px 0; /* Margin around heading */
+}
+
+.category-card p {
+    color: #666; /* Text color for course count */
+    font-size: 14px; /* Font size for course count */
+    margin: 0; /* Remove default margin */
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.top-categories, .top-courses, .top-instructors {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.categories-container, .courses-container, .instructors-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card, .course-card, .instructor-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-card p, .course-card p, .instructor-card p {
+    margin: 10px 0;
+}
+
+.course-card img, .instructor-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.categories-container .category-card {
+    flex: 1 1 calc(25% - 40px);
+}
+
+.courses-container .course-card, .instructors-container .instructor-card {
+    flex: 1 1 calc(20% - 40px);
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.top-categories, .top-courses, .top-instructors, .customer-say, .become-instructor, .transform-life {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.categories-container, .courses-container, .instructors-container, .customer-feedback-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-card, .course-card, .instructor-card, .feedback-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-card p, .course-card p, .instructor-card p, .feedback-card p {
+    margin: 10px 0;
+}
+
+.course-card img, .instructor-card img, .feedback-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.categories-container .category-card {
+    flex: 1 1 calc(25% - 40px);
+}
+
+.courses-container .course-card, .instructors-container .instructor-card, .customer-feedback-container .feedback-card {
+    flex: 1 1 calc(20% - 40px);
+}
+.course-card .ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course-card .ratings span {
+    color: #ffcc00; /* Yellow color for stars */
+    margin-right: 5px; /* Space between star rating and number of ratings */
+}
+
+.course-card .ratings span:last-child {
+    color: #666; /* Color for number of ratings */
+}
+    
+    
+.top-instructors {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header .see-all {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.instructors {
+    display: flex;
+    gap: 24px; /* Set the gap between cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding-bottom: 10px; /* Add padding to align last card properly */
+}
+
+.instructor-card {
+    flex: 0 0 auto; /* Prevent cards from growing */
+    width: 200px; /* Fixed width for each card */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+}
+
+.instructor-card img {
+    width: 60%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners if desired */
+    object-fit: cover; /* Maintain image aspect ratio and fill container */
+}
+
+.instructor-card h3,
+.instructor-card p {
+    margin: 5px 0;
+    font-size: 14px; /* Adjusted font size */
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+    font-size: 12px; /* Adjusted font size */
+}
+
+.rating span {
+    margin-left: 3px; /* Adjusted spacing */
+    color: #777;
+}
+
+
+
+
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4; /* Optional: Background color for the header */
+    border-bottom: 1px solid #ddd; /* Optional: Border to separate header from content */
+}
+
+.title-container h2 {
+    margin: 0;
+}
+
+.arrow-img {
+    margin-left: 10px; /* Optional: Add some space between the title and the image */
+}
+
+.customer-feedback-container {
+    padding: 10px;
+    background-color: #fff; /* Background color for the feedback container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for the container */
+    border-radius: 8px; /* Optional: Rounded corners for the container */
+}
+
+.feedback-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.feedback-card p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.customer-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px; /* Adjusted image size */
+    height: 40px; /* Adjusted image size */
+}
+.feedback-card p .quote-img {
+    width: 16px; /* Adjusted width */
+    height: 16px; /* Adjusted height */
+    vertical-align: middle; /* Align the image vertically with the text */
+    margin-right: 5px; /* Optional: Add space between the image and the text */
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text .name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.info-text .role {
+    margin: 0;
+    color: #666;
+}
+
+
+.instructor-container, .life-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.instructor-info, .life-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.instructor-info h2, .life-info h2 {
+    margin-bottom: 10px;
+}
+
+.instructor-info p, .life-info p {
+    margin-bottom: 20px;
+}
+
+.instructor-info a, .life-info a {
+     display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color:  #1E293B;
+    ;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info, .footer-links, .footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-info h3, .footer-links h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media (max-width: 768px) {
+    .categories-container .category-card, .courses-container .course-card, .instructors-container .instructor-card {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .categories-container .category-card, .courses-container .course-card, .instructors-container .instructor-card {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+
+
